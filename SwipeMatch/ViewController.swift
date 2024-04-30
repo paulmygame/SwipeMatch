@@ -22,12 +22,12 @@ class ViewController: UIViewController {
         topStackView.distribution = .fillEqually
         topStackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
-        let blueView = UIView()
-        blueView.backgroundColor = .blue
+        let blueViews = UIView()
+        blueViews.backgroundColor = .blue
         
         let buttonStackView = HomeBottomControlsStackView()
         
-        let overallStackView = UIStackView(arrangedSubviews: [topStackView, blueView, buttonStackView])
+        let overallStackView = UIStackView(arrangedSubviews: [topStackView, blueViews, buttonStackView])
         overallStackView.axis = .vertical
         view.addSubview(overallStackView)
         overallStackView.frame = .init(x: 0, y: 0, width: 300, height: 200)
