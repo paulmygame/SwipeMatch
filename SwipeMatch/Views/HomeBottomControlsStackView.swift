@@ -17,13 +17,13 @@ class HomeBottomControlsStackView: UIStackView {
         
         // bottom row of buttons
         
-        let buttonSubview = [UIColor.red, .green, .yellow, .blue, .purple].map { color  -> UIView in
-            let v = UIView()
-            v.backgroundColor = color
-            return v
+        let subviews = [UIImage(named: "btn_refresh_img"), UIImage(named: "btn_close_img"), UIImage(named: "btn_star_img"), UIImage(named: "btn_heart_img"), UIImage(named: "btn_lightning_img")].map { (img)  -> UIView in
+            let button = UIButton(type: .system)
+            button.setImage(img?.withRenderingMode(.alwaysOriginal), for: .normal)
+            return button
         }
         
-        buttonSubview.forEach { (v) in
+        subviews.forEach { (v) in
             addArrangedSubview(v)
         }
     }
