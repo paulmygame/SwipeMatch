@@ -9,23 +9,26 @@ import UIKit
 
 class TopNavigationStackiew: UIStackView {
 
+    let settingButton = UIButton(type: .system)
+    let messageButton = UIButton(type: .system)
+    let fireImageView = UIImageView(image: UIImage(named: "btn_fire_img"))
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-                
-        distribution = .fillEqually
-        heightAnchor.constraint(equalToConstant: 100).isActive = true
+        heightAnchor.constraint(equalToConstant: 80).isActive = true
         
-        // top row of buttons
+        fireImageView.contentMode = .scaleAspectFit
+        settingButton.setImage(UIImage(named: "btn_prof_img")?.withRenderingMode(.alwaysOriginal), for: .normal)
+        messageButton.setImage(UIImage(named: "btn_chat_img")?.withRenderingMode(.alwaysOriginal), for: .normal)
         
-        let buttons = [UIImage(named: "btn_prof_img"), UIImage(named: "btn_fire_img"), UIImage(named: "btn_chat_img")].map { (img) -> UIView in
-            let button = UIButton(type: .system)
-            button.setImage(img?.withRenderingMode(.alwaysOriginal), for: .normal)
-            return button
-        }
-        
-        buttons.forEach { (v) in
+        [settingButton, UIView(), fireImageView, UIView(), messageButton].forEach { (v) in
             addArrangedSubview(v)
         }
+        
+        distribution = .equalCentering
+        
+        isLayoutMarginsRelativeArrangement = true
+        layoutMargins = .init(top: 0, left: 16, bottom: 0, right: 16)
     }
     
     required init(coder: NSCoder) {

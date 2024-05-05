@@ -9,17 +9,18 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    let topStackView = TopNavigationStackiew()
+    let blueViews = UIView()
+    let buttonStackView = HomeBottomControlsStackView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let topStackView = TopNavigationStackiew()
         
-        let blueViews = UIView()
         blueViews.backgroundColor = .blue
-        
-        let buttonStackView = HomeBottomControlsStackView()
-        
+        setupLayout()
+    }
+    
+    fileprivate func setupLayout() {
         let overallStackView = UIStackView(arrangedSubviews: [topStackView, blueViews, buttonStackView])
         overallStackView.axis = .vertical
         view.addSubview(overallStackView)
