@@ -6,6 +6,7 @@ target 'SwipeMatch' do
   use_frameworks!
 
     pod 'Masonry'
+    pod 'SnapKit', '~> 5.7.0'
 
   target 'SwipeMatchTests' do
     inherit! :search_paths
