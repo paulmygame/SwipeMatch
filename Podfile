@@ -5,7 +5,7 @@ target 'SwipeMatch' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SwipeMatch
+    pod 'Masonry'
 
   target 'SwipeMatchTests' do
     inherit! :search_paths
@@ -15,7 +15,5 @@ target 'SwipeMatch' do
   target 'SwipeMatchUITests' do
     # Pods for testing
   end
-  
-  pod 'Masonry'
 
 end
