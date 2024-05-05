@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		55A76FE106A0C7E98B3FDBF7 /* Pods_SwipeMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C77642505C7E707EFB8BC0 /* Pods_SwipeMatch.framework */; };
 		D64B6D63AD843C0332CB4F5D /* Pods_SwipeMatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D889783E816F6DFFE3B546D /* Pods_SwipeMatchTests.framework */; };
+		DA65AA962BE762200020F27C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA65AA952BE762200020F27C /* CardView.swift */; };
 		DABA9D192BE136F0002A3446 /* TopNavigationStackiew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABA9D182BE136F0002A3446 /* TopNavigationStackiew.swift */; };
 		DAD8ED722BC7999600F69247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD8ED712BC7999600F69247 /* AppDelegate.swift */; };
 		DAD8ED742BC7999600F69247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD8ED732BC7999600F69247 /* SceneDelegate.swift */; };
@@ -49,6 +50,7 @@
 		AB6AA0380DF0AF4CE229B5C1 /* Pods-SwipeMatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeMatchTests.debug.xcconfig"; path = "Target Support Files/Pods-SwipeMatchTests/Pods-SwipeMatchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3C77642505C7E707EFB8BC0 /* Pods_SwipeMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwipeMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E110AC150028B21F86F9DC /* Pods-SwipeMatch-SwipeMatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwipeMatch-SwipeMatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwipeMatch-SwipeMatchUITests/Pods-SwipeMatch-SwipeMatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA65AA952BE762200020F27C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DABA9D182BE136F0002A3446 /* TopNavigationStackiew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackiew.swift; sourceTree = "<group>"; };
 		DAD8ED6E2BC7999600F69247 /* SwipeMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD8ED712BC7999600F69247 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				DAD8EDA52BC7D46000F69247 /* HomeBottomControlsStackView.swift */,
 				DABA9D182BE136F0002A3446 /* TopNavigationStackiew.swift */,
+				DA65AA952BE762200020F27C /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA65AA962BE762200020F27C /* CardView.swift in Sources */,
 				DAD8ED762BC7999600F69247 /* ViewController.swift in Sources */,
 				DAD8ED722BC7999600F69247 /* AppDelegate.swift in Sources */,
 				DAD8EDA62BC7D46000F69247 /* HomeBottomControlsStackView.swift in Sources */,
